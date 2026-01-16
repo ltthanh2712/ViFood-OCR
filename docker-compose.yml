@@ -6,7 +6,7 @@ services:
     container_name: vifood-ocr-api
     image: vifood-ocr:latest
     ports:
-      - "8000:8000"
+      - "3000:3000"
     volumes:
       # Mount thư mục images để có thể thêm ảnh từ bên ngoài
       - ./images:/app/images

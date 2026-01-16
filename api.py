@@ -320,6 +320,6 @@ async def ocr_image_simple(file: UploadFile = File(...)):
 if __name__ == "__main__":
     # Run server
     print("Starting ViFood OCR API server...")
-    print("API Documentation: http://localhost:8000/docs")
-    print("API Base URL: http://localhost:8000")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    print("API Documentation: http://localhost:3000/docs")
+    print("API Base URL: http://localhost:3000")
+    uvicorn.run(app, host="0.0.0.0", port=3000)

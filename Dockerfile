@@ -35,11 +35,11 @@ RUN if [ ! -f "./CRAFT-pytorch/weights/craft_mlt_25k.pth" ]; then \
 RUN mkdir -p images result output
 
 # Expose port
-EXPOSE 8000
+EXPOSE 3000
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD python -c "import requests; requests.get('http://localhost:8000/')" || exit 1
+    CMD python -c "import requests; requests.get('http://localhost:3000/')" || exit 1
 
 # Run API server
 CMD ["python", "api.py"]

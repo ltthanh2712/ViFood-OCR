@@ -1,6 +1,6 @@
 # PyTorch và dependencies chính
-torch==2.0.1
-torchvision==0.15.2
+torch>=2.2.0
+torchvision>=0.17.0
 numpy==1.26.4
 
 # Xử lý ảnh
@@ -16,3 +16,8 @@ einops>=0.2.0
 gdown>=4.4.0
 albumentations>=1.4.2
 lmdb>=1.0.0
+
+# API Server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6

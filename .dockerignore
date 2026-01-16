@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitmodules
+
+# Output files
+result/
+output/
+*.jpg
+*.png
+*.txt
+!requirements.txt
+
+# Models (will be downloaded during build)
+# CRAFT-pytorch/weights/
+
+# Test files
+test_*.py
+api_test_result.json
+
+# Documentation
+README.md
+API_GUIDE.md

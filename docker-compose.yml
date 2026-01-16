@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  vifood-ocr:
+    build: .
+    container_name: vifood-ocr-api
+    image: vifood-ocr:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount thư mục images để có thể thêm ảnh từ bên ngoài
+      - ./images:/app/images
+      # Mount thư mục result để lấy kết quả
+      - ./result:/app/result
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s

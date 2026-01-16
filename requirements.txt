@@ -1,0 +1,18 @@
+# PyTorch và dependencies chính
+torch==2.0.1
+torchvision==0.15.2
+numpy==1.26.4
+
+# Xử lý ảnh
+opencv-python==4.9.0.80
+scikit-image==0.22.0
+pillow>=10.2.0
+
+# Visualization
+matplotlib
+
+# VietOCR dependencies
+einops>=0.2.0
+gdown>=4.4.0
+albumentations>=1.4.2
+lmdb>=1.0.0

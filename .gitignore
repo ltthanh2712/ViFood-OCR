@@ -193,7 +193,21 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
-Beta
-0 / 10
-used queries
-1
+
+# ViFood-OCR specific
+# Output files
+result/test*/
+output/*.txt
+output/*.jpg
+output/*.json
+debug_order.jpg
+detection_result.jpg
+heatmap_result.jpg
+cropped_regions.jpg
+ocr_result.txt
+ocr_simple.txt
+
+# Model weights - Large files (Git LFS recommended)
+# Uncomment if you don't want to push weights to GitHub
+# *.pth
+# !CRAFT-pytorch/weights/craft_mlt_25k.pth
